@@ -1,4 +1,29 @@
-def evalua_mult(val_1, val_2):
+posiciones = [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+]
+
+minas = 18
+
+while minas != 0:
+    columnas = int(input())-1
+    filas = int(input())-1
+    if posiciones[filas][columnas] == 0:
+        posiciones[filas][columnas] = 1
+        minas = minas - 1
+
+print(posiciones)
+
+#Fin de juego
+'''def evalua_mult(val_1, val_2):
     return val_1*val_2
 def evalua_div(val_1, val_2):
     return val_1/val_2
@@ -15,5 +40,4 @@ print("El total de puntos es ", multi)
 while x <= multi:
     print("Felicidades, pasaste el nivel")
 while multi <= x:
-    print("Lastima, mejor suerte a la próxima")
-    
+    print("Lastima, mejor suerte a la próxima")'''
