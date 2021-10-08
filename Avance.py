@@ -1,3 +1,5 @@
+#Posiciones de las minas
+import random
 posiciones = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -14,8 +16,8 @@ posiciones = [
 minas = 18
 
 while minas != 0:
-    columnas = int(input())-1
-    filas = int(input())-1
+    columnas = random.randint(0, 9)
+    filas = random.randint(0, 9)
     if posiciones[filas][columnas] == 0:
         posiciones[filas][columnas] = 1
         minas = minas - 1
