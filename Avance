@@ -1,0 +1,19 @@
+class videojuegos{
+private:
+  std::string genero;
+  int jugadores;
+  float tam;
+public:
+  videojuegos();
+  videojuegos(std::string genero, int jugadores, float tam)
+  std::string get_genero();
+    int get_jugadores();
+    int get_tam();
+  void set_genero(std::string );
+    void set_jugadores(int );
+    void set_tam(int );
+};
+std::string videojuegos::get_genero(){
+  return especie;
+}
+void videojuegos::set_genero(std::string genero)
